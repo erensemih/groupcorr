@@ -1,7 +1,9 @@
 from setuptools import setup, find_packages
 
-with open('requirements.txt') as f:
-    requirements = f.read().splitlines()
+#with open("requirements.txt") as f:
+#    print("opendayım")
+#    requirements = f.read().splitlines()
+#    print(requirements)
 
 with open("README.md", "r") as fh:
     long_description = fh.read()
@@ -17,7 +19,11 @@ setup(
     long_description=long_description,
     long_description_content_type="text/markdown",
     packages=find_packages(),
-    install_requires=requirements,
+    install_requires=[
+        "numpy",
+        "pandas",
+        "scipy",
+    ],
     classifiers=[
         "Programming Language :: Python :: 3",
         "License :: OSI Approved :: MIT License",
